@@ -1,7 +1,5 @@
-import { ButtonHTMLAttributes, HtmlHTMLAttributes } from "react";
-import { useRecoilValue } from "recoil";
+import { HtmlHTMLAttributes } from "react";
 import CartMoreIcon from "../../../../assets/icons/cartMore";
-import { shoppingCartState } from "../../../states";
 import { Container, ContentIcon, Text } from "./styles";
 type ButtonAddCartProps = HtmlHTMLAttributes<HTMLButtonElement> & {
   selected: boolean;

@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 64px;
+  padding: 64px 0;
   background-color: ${(props) => props.theme.colors.secondary};
   border-radius: 4px;
 `;
@@ -18,22 +18,23 @@ export const Content = styled.div`
   align-items: center;
 `;
 
-export const Title = styled.div`
+export const Title = styled.h1`
   display: flex;
+  padding: 0 64px;
   color: ${(props) => props.theme.colors.textQuaternary};
   font-size: 20px;
-  font-weight: 700;
   line-height: 27px;
   text-align: center;
 `;
 
 type ContainerImageProps = { type: "empty" | "success" };
 
-export const ContainerImage = styled.div`
-  border-bottom: ${({ type }: ContainerImageProps) =>
-    type === "success"
-      ? "none"
-      : (props) => `1px solid ${props.theme.colors.borderSecondaryColor}`};
+export const ContainerImage = styled.div<ContainerImageProps>`
+  ${({ type, theme }) =>
+    type === "empty" &&
+    css`
+      border-bottom: 1px solid ${theme.colors.borderSecondaryColor};
+    `};
 
   width: 100%;
   max-width: 447px;
@@ -42,10 +43,10 @@ export const ContainerImage = styled.div`
   display: flex;
 `;
 
-export const Image = styled.img`
-  max-width: ${({ type }: ContainerImageProps) =>
-    type === "success" ? "294px" : "178"};
+export const Image = styled.img<ContainerImageProps>`
+  max-width: ${({ type }) => (type === "success" ? "294px" : "178")};
 `;
+
 export const Button = styled.button`
   cursor: pointer;
   border-radius: 4px;

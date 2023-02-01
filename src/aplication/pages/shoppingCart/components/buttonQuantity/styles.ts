@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Content = styled.div`
+  align-items: center;
   display: flex;
   gap: 11px;
-  align-items: center;
 `;
 
 export const Button = styled.button`
@@ -11,13 +11,13 @@ export const Button = styled.button`
 `;
 
 export const Quantity = styled.div`
-  width: 100%;
-  max-width: 62px;
-  padding-left: 16px;
-  padding-right: 38px;
   border: 1px solid ${(props) => props.theme.colors.borderPrimaryColor};
-  border-radius: 4px;
   color: ${(props) => props.theme.colors.textQuaternary};
+  padding-right: 38px;
+  padding-left: 16px;
+  border-radius: 4px;
+  line-height: 24pßx;
   font-size: 14px;
-  line-height: 24px;
+  max-width: 62px;
+  width: 100%;
 `;

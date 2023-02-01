@@ -2,7 +2,7 @@ import AddIcon from "../../../../assets/icons/add";
 import SubtractIcon from "../../../../assets/icons/subtract";
 import { Content, Quantity, Button } from "./styles";
 import { shoppingCartProps, shoppingCartState } from "../../../states";
-import { useRecoilState, useSetRecoilState } from "recoil";
+import { useRecoilState } from "recoil";
 
 type ButtonQuantity = {
   product: shoppingCartProps;

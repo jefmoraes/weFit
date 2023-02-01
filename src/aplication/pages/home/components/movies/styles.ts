@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 98px 16px;
+  max-width: 992px;
   display: grid;
   margin: auto;
   width: 100%;
-  padding: 98px 16px;
-  grid-template-columns: repeat(3, 1fr);
-  max-width: 992px;
-  align-items: center;
-  justify-content: center;
   gap: 16px;
 
   @media (max-width: 992px) {

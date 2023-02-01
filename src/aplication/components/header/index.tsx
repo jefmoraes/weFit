@@ -1,25 +1,17 @@
 import { Suspense } from "react";
-import { useNavigate } from "react-router-dom";
-import { useRecoilValue } from "recoil";
-import CartIcon from "../../assets/icons/cart";
+import { useLocation, useNavigate } from "react-router-dom";
 import LoadingIcon from "../../assets/icons/loading";
-import { shoppingCartState } from "../../pages/states";
 import MyCart from "../myCart";
-import {
-  Container,
-  ContentCard,
-  ContentHeader,
-  ContentTitleCard,
-  Subtext,
-  Text,
-  Title,
-} from "./styles";
+import { Container, ContentHeader, Title } from "./styles";
 
 export default function Header() {
   const navigate = useNavigate();
+  const location = useLocation();
 
   function goTo() {
-    navigate("/shopping-cart");
+    if (location.pathname !== "/shopping-cart") {
+      navigate("/shopping-cart");
+    }
   }
 
   return (

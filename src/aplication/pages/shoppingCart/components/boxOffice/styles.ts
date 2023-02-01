@@ -1,25 +1,24 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 21px;
-  padding: 24px;
-  flex: 1;
-  border-radius: 4px;
   background-color: ${(props) => props.theme.colors.secondary};
+  flex-direction: column;
+  border-radius: 4px;
+  padding: 24px;
+  display: flex;
+  gap: 21px;
+  flex: 1;
 
   @media (max-width: 600px) {
     padding: 16px 8px 16px 16px;
-
     height: 100%;
   }
 `;
 
 export const ContentTitle = styled.div`
+  justify-content: space-between;
   display: flex;
   width: 100%;
-  justify-content: space-between;
 
   @media (max-width: 600px) {
     display: none;
@@ -27,46 +26,45 @@ export const ContentTitle = styled.div`
 `;
 
 export const Text = styled.div`
-  max-width: 214px;
-  width: 100%;
   color: ${(props) => props.theme.colors.textTertiary};
-  font-size: 14px;
-  font-weight: 700;
-  text-align: start;
   line-height: 19px;
+  text-align: start;
+  font-weight: 700;
+  max-width: 214px;
+  font-size: 14px;
+  width: 100%;
 `;
 
 export const QuantityText = styled.div`
-  min-width: 120px;
   color: ${(props) => props.theme.colors.textTertiary};
-  font-size: 14px;
-  font-weight: 700;
   text-align: start;
   line-height: 19px;
+  min-width: 120px;
+  font-weight: 700;
+  font-size: 14px;
 `;
 
 export const ProductText = styled.div`
-  min-width: 89px;
-
   color: ${(props) => props.theme.colors.textTertiary};
-  font-size: 14px;
-  font-weight: 700;
-  text-align: start;
   line-height: 19px;
+  text-align: start;
+  font-weight: 700;
+  min-width: 89px;
+  font-size: 14px;
 `;
 
 export const ProductsContainer = styled.div`
-  display: flex;
-  flex: 1;
-  gap: 16px;
   flex-direction: column;
   overflow-y: auto;
+  display: flex;
+  gap: 16px;
+  flex: 1;
 `;
 
 export const Line = styled.div`
-  height: 1px;
   background-color: ${(props) => props.theme.colors.gray10};
   margin-right: 8px;
+  height: 1px;
 `;
 
 export const TotalContainer = styled.div`

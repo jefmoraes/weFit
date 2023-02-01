@@ -2,7 +2,7 @@ import Header from "../../components/header";
 import IndicationCard from "../../components/indicationCard";
 import { Container, Main } from "./styles";
 
-export default function FinishOrder() {
+export default function LayoutFinishOrder() {
   return (
     <Container>
       <Header />
