@@ -1,8 +1,8 @@
 import { useRecoilValue } from "recoil";
 import Header from "../../components/header";
 import IndicationCard from "../../components/indicationCard";
-import { shoppingCartState } from "../states";
 import BoxOffice from "./components/boxOffice";
+import { shoppingCartState } from "../states";
 import { Container, Main } from "./styles";
 
 export default function LayoutShoppingCart() {

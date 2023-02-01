@@ -1,25 +1,25 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-  display: flex;
-  width: 100%;
-  height: 74px;
-  position: fixed;
-  align-items: center;
-  justify-content: center;
   background-color: ${(props) => props.theme.colors.primary};
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  display: flex;
+  height: 74px;
+  width: 100%;
   @media (max-width: 600px) {
     height: 68px;
   }
 `;
 
 export const ContentHeader = styled.div`
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
-  flex: 1;
   max-width: 960px;
+  padding: 0 10px;
+  display: flex;
+  flex: 1;
 `;
 
 export const Title = styled.h1`

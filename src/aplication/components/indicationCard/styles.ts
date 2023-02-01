@@ -1,30 +1,30 @@
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 64px 0;
   background-color: ${(props) => props.theme.colors.secondary};
+  flex-direction: column;
   border-radius: 4px;
+  padding: 64px 0;
+  display: flex;
+  width: 100%;
 `;
 
 export const Content = styled.div`
-  width: 100%;
-  display: flex;
-  gap: 32px;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
+  display: flex;
+  width: 100%;
+  gap: 32px;
 `;
 
 export const Title = styled.h1`
-  display: flex;
-  padding: 0 64px;
   color: ${(props) => props.theme.colors.textQuaternary};
-  font-size: 20px;
-  line-height: 27px;
   text-align: center;
+  line-height: 27px;
+  padding: 0 64px;
+  font-size: 20px;
+  display: flex;
 `;
 
 type ContainerImageProps = { type: "empty" | "success" };
@@ -36,11 +36,11 @@ export const ContainerImage = styled.div<ContainerImageProps>`
       border-bottom: 1px solid ${theme.colors.borderSecondaryColor};
     `};
 
-  width: 100%;
-  max-width: 447px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  max-width: 447px;
   display: flex;
+  width: 100%;
 `;
 
 export const Image = styled.img<ContainerImageProps>`
@@ -48,13 +48,13 @@ export const Image = styled.img<ContainerImageProps>`
 `;
 
 export const Button = styled.button`
-  cursor: pointer;
-  border-radius: 4px;
-  font-size: 14px;
-  line-height: 19px;
-  text-align: center;
-  font-weight: 700;
   background-color: ${(props) => props.theme.colors.primaryColorButton};
   color: ${(props) => props.theme.colors.textPrimary};
+  text-align: center;
   padding: 11px 60px;
+  border-radius: 4px;
+  line-height: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 14px;
 `;

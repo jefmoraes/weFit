@@ -12,8 +12,8 @@ export const Main = styled.main`
   width: 100%;
 
   @media (max-width: 600px) {
+    padding-bottom: 16px;
     padding-top: 68px;
     height: 100vh;
-    padding-bottom: 16px;
   }
 `;

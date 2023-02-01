@@ -1,8 +1,8 @@
-import { Suspense } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import LoadingIcon from "../../assets/icons/loading";
-import MyCart from "../myCart";
 import { Container, ContentHeader, Title } from "./styles";
+import LoadingIcon from "../../assets/icons/loading";
+import { Suspense } from "react";
+import MyCart from "../myCart";
 
 export default function Header() {
   const navigate = useNavigate();

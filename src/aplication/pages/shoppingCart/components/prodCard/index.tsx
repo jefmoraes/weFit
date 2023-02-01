@@ -1,21 +1,21 @@
-import { useRecoilState } from "recoil";
-import TrashIcon from "../../../../assets/icons/trash";
 import { shoppingCartProps, shoppingCartState } from "../../../states";
+import TrashIcon from "../../../../assets/icons/trash";
 import ButtonQuantity from "../buttonQuantity";
+import { useRecoilState } from "recoil";
 import {
-  Content,
-  DesktopContainer,
-  HeaderProduct,
-  Image,
-  ImageContainer,
-  MobileContainer,
-  Price,
-  SubTotal,
-  SubTotalPrice,
   SubTotalQuantityContainer,
+  DesktopContainer,
+  MobileContainer,
+  HeaderProduct,
+  ImageContainer,
+  SubTotalPrice,
   SubTotalText,
-  Text,
   TrashButton,
+  SubTotal,
+  Content,
+  Image,
+  Price,
+  Text,
 } from "./styles";
 
 type ProdCardProps = {

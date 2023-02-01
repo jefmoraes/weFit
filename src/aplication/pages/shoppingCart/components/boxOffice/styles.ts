@@ -68,12 +68,12 @@ export const Line = styled.div`
 `;
 
 export const TotalContainer = styled.div`
-  width: 100%;
-  display: flex;
-  border-radius: 4px;
   justify-content: space-between;
-  gap: 16px;
+  border-radius: 4px;
   padding-right: 8px;
+  display: flex;
+  width: 100%;
+  gap: 16px;
 
   @media (max-width: 490px) {
     flex-direction: column-reverse;
@@ -84,17 +84,16 @@ export const TotalContainer = styled.div`
 `;
 
 export const FinishOrder = styled.button`
-  width: 100%;
-  padding: 11px 0;
-  align-items: center;
-  justify-content: center;
-
   background-color: ${(props) => props.theme.colors.primaryColorButton};
   color: ${(props) => props.theme.colors.textPrimary};
-  font-size: 14px;
-  font-weight: 700;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   line-height: 19px;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 11px 0;
+  width: 100%;
 
   @media (min-width: 491px) {
     max-width: 236px;
@@ -102,25 +101,25 @@ export const FinishOrder = styled.button`
 `;
 
 export const Total = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 26px;
   align-self: flex-end;
+  align-items: center;
+  display: flex;
+  gap: 26px;
 `;
 
 export const TotalText = styled.span`
   color: ${(props) => props.theme.colors.textTertiary};
-  font-size: 14px;
-  font-weight: 700;
   text-align: center;
   line-height: 19px;
+  font-weight: 700;
+  font-size: 14px;
 `;
 
 export const Price = styled.span`
   color: ${(props) => props.theme.colors.textQuaternary};
   white-space: nowrap;
-  font-size: 24px;
-  font-weight: 700;
   text-align: center;
   line-height: 33px;
+  font-weight: 700;
+  font-size: 24px;
 `;

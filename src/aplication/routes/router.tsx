@@ -1,7 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import ShoppingCart from "../pages/shoppingCart";
 import FinishOrder from "../pages/finishOrder";
 import Home from "../pages/home";
-import ShoppingCart from "../pages/shoppingCart";
 
 export default function Router() {
   return (

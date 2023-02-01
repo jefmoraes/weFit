@@ -1,18 +1,18 @@
+import { shoppingCartState } from "../../pages/states";
 import { useNavigate } from "react-router-dom";
 import { useResetRecoilState } from "recoil";
-import { shoppingCartState } from "../../pages/states";
 import {
-  Button,
-  Container,
   ContainerImage,
+  Container,
   Content,
+  Button,
   Image,
   Title,
 } from "./styles";
 type IndicationCardProps = {
-  title: string;
-  image: string;
   type: "empty" | "success";
+  image: string;
+  title: string;
 };
 
 export default function IndicationCard({

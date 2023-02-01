@@ -1,29 +1,31 @@
 import styled from "styled-components";
 
 export const DesktopContainer = styled.div`
-  display: flex;
-  flex: 1;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding-right: 8px;
+  display: flex;
   gap: 16px;
+  flex: 1;
+
   @media (max-width: 600px) {
     display: none;
   }
 `;
 
 export const ImageContainer = styled.div``;
+
 export const Image = styled.img`
-  width: 100%;
   max-width: 89px;
+  width: 100%;
 `;
 
 export const HeaderProduct = styled.div`
-  display: flex;
   justify-content: space-between;
   flex-direction: column;
-  gap: 8px;
+  display: flex;
   width: 100%;
+  gap: 8px;
 
   @media (max-width: 600px) {
     flex-direction: row;
@@ -35,20 +37,20 @@ export const HeaderProduct = styled.div`
 
 export const Text = styled.span`
   color: ${(props) => props.theme.colors.textQuaternary};
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 19px;
   white-space: nowrap;
+  line-height: 19px;
+  font-weight: 700;
+  font-size: 14px;
 `;
 
 export const Price = styled.span`
-  align-items: center;
-  justify-content: center;
   color: ${(props) => props.theme.colors.textQuaternary};
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 22px;
+  justify-content: center;
+  align-items: center;
   white-space: nowrap;
+  line-height: 22px;
+  font-weight: 700;
+  font-size: 16px;
 `;
 
 export const TrashButton = styled.button`
@@ -56,52 +58,54 @@ export const TrashButton = styled.button`
 `;
 
 export const SubTotal = styled.div`
-  display: flex;
   flex-direction: column;
-  min-width: 98px;
   align-items: flex-end;
+  min-width: 98px;
+  display: flex;
 `;
 
 export const SubTotalText = styled.span`
   color: ${(props) => props.theme.colors.textTertiary};
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
   white-space: nowrap;
+  line-height: 16px;
+  font-weight: 700;
+  font-size: 12px;
 `;
 
 export const SubTotalPrice = styled.span`
   color: ${(props) => props.theme.colors.textQuaternary};
-  font-size: 20;
-  font-weight: 700;
-  line-height: 22px;
   white-space: nowrap;
+  line-height: 22px;
+  font-weight: 700;
   max-width: 214px;
+  font-size: 20;
+
   @media (min-width: 601px) {
     width: 100%;
   }
 `;
 
 export const MobileContainer = styled.div`
+  padding-right: 8px;
   display: flex;
   gap: 16px;
-  padding-right: 8px;
+
   @media (min-width: 601px) {
     display: none;
   }
 `;
 
 export const Content = styled.div`
-  display: flex;
   justify-content: center;
-  flex: 1;
   flex-direction: column;
+  display: flex;
   gap: 16px;
+  flex: 1;
 `;
 
 export const SubTotalQuantityContainer = styled.div`
-  display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  display: flex;
   gap: 16px;
 `;

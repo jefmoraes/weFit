@@ -1,6 +1,7 @@
-import { HtmlHTMLAttributes } from "react";
 import CartMoreIcon from "../../../../assets/icons/cartMore";
 import { Container, ContentIcon, Text } from "./styles";
+import { HtmlHTMLAttributes } from "react";
+
 type ButtonAddCartProps = HtmlHTMLAttributes<HTMLButtonElement> & {
   selected: boolean;
   amount: number;

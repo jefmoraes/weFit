@@ -1,5 +1,5 @@
-import Header from "../../components/header";
 import IndicationCard from "../../components/indicationCard";
+import Header from "../../components/header";
 import { Container, Main } from "./styles";
 
 export default function LayoutFinishOrder() {

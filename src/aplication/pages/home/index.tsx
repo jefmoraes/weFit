@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import HomeLayout from "./layout";
 
 export default function Home() {

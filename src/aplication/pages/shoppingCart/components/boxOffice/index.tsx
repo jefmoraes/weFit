@@ -1,22 +1,22 @@
+import { shoppingCartState } from "../../../states";
 import { useNavigate } from "react-router-dom";
 import { useRecoilValue } from "recoil";
-import { CalcTotalProds } from "../../../../../infrastructure/calcTotalProds/calcTotalProds";
-import { shoppingCartState } from "../../../states";
 import ProdCard from "../prodCard";
 import {
-  Container,
-  ContentTitle,
-  FinishOrder,
-  Line,
-  Price,
   ProductsContainer,
-  ProductText,
-  QuantityText,
-  Text,
-  Total,
   TotalContainer,
+  QuantityText,
+  ContentTitle,
+  ProductText,
+  FinishOrder,
   TotalText,
+  Container,
+  Price,
+  Total,
+  Line,
+  Text,
 } from "./styles";
+import { CalcTotalProds } from "../../../../utils/calcTotalProds/calcTotalProds";
 
 export default function BoxOffice() {
   const shoppingCartList = useRecoilValue(shoppingCartState);

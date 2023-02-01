@@ -1,20 +1,20 @@
-import { useRecoilState, useSetRecoilState } from "recoil";
 import { shoppingCartState } from "../../../states";
 import ButtonAddCart from "../ButtonAddCart";
+import { useRecoilState } from "recoil";
 import {
+  MovieContainer,
   Container,
   Content,
-  Image,
-  MovieContainer,
   Price,
+  Image,
   Title,
 } from "./styles";
 
 export type MovieProps = {
-  id: number;
   title: string;
   price: number;
   image: string;
+  id: number;
 };
 
 type MovieCardProps = {

@@ -1,12 +1,13 @@
-import AddIcon from "../../../../assets/icons/add";
+import { shoppingCartProps, shoppingCartState } from "../../../states";
 import SubtractIcon from "../../../../assets/icons/subtract";
 import { Content, Quantity, Button } from "./styles";
-import { shoppingCartProps, shoppingCartState } from "../../../states";
+import AddIcon from "../../../../assets/icons/add";
 import { useRecoilState } from "recoil";
 
 type ButtonQuantity = {
   product: shoppingCartProps;
 };
+
 export default function ButtonQuantity({ product }: ButtonQuantity) {
   const [shoppingCart, setShoppingCart] = useRecoilState(shoppingCartState);
 

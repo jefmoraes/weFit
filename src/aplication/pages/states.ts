@@ -4,7 +4,7 @@ import { MovieProps } from "./home/components/movieCard";
 
 export const movieListState = selector<MovieProps[]>({
   key: "movieList",
-  get: async ({ get }) => {
+  get: async () => {
     try {
       const response = await api.get("/");
       return response.data;
