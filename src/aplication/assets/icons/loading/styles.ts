@@ -11,18 +11,18 @@ const rotate = keyframes`
 `;
 
 export const Container = styled.div`
-  align-self: center;
   display: flex;
+  align-self: center;
 `;
 
 export const Content = styled.div`
-  border-left: 5px solid ${(props) => props.theme.colors.iconPrimaryColor};
-  border: 5px solid ${(props) => props.theme.colors.gray10};
-  animation-iteration-count: infinite;
-  animation-name: ${rotate};
-  animation-duration: 1.5s;
-  border-radius: 32px;
   height: 64px;
   width: 64px;
+  border-radius: 32px;
+  border: 5px solid ${(props) => props.theme.colors.gray10};
+  border-left: 5px solid ${(props) => props.theme.colors.iconPrimaryColor};
   opacity: 0.8;
+  animation-name: ${rotate};
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
 `;
